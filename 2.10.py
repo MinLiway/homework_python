@@ -72,46 +72,37 @@
 
 
 file = input('Введите файл - ')
-
-try:
-    f = open (file, 'r')
-except Exception as err:
-    print('Искал, искал не нашел!!', err)
-    quit()
-try:
-    grade = int(input('Введите оценку: '))
-except Exception as err:
-    print('Вы не то ввели, попытайтесь еще разок!', err)
-    quit()
-
-lines = f.readlines()
-for line in lines:
+f = open (file, 'r')
+k = int(input('Введите оценку: '))
+t = f.readlines()
+for line in t:
     a = line.split()
     p = a[-1]
     if p == 'a':
         p = 5
     if p == 'b':
-        p = 4
+            p = 4
     if p == 'c':
-        p = 3
+            p = 3
     if p == 'd':
-        p = 2
-    try:
-        b = int(p)
-    except Exception as err:
-        print ('Не то!', err)
-    if b <= grade:
-        print(a[0:2], p)
-
-# Работаем по 1000000 бальной системе!
-
-
-
-
-
-
+                    p = 2             
+    b = int(p)  
+    if b >= k: 
+        print(a [0:2], p)
 
     
 
 
 
+# file = input('Введите файл - ')
+
+# try:
+#     f = open (file, 'r')
+# except:
+#     print('Искал, искал не нашел')
+#     exit()
+# try:
+#     grade = int(input('Введите оценку: '))
+# except:
+#     print('Это даже близко не цифра, попытайтесь еще разок')
+#     exit()
