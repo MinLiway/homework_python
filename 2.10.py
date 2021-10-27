@@ -71,22 +71,22 @@
 #             print(fd[0], fd[4])
 
 
-# file = input('Введите файл - ')
-# f = open (file, 'r')
-# k = int(input('Введите оценку: '))
-# t = f.readlines()
-# for line in t:
-#     a = line.split()
-#     p = a[-1]
-#     if p == 'a':
-#         p = 5
-#     if p == 'b':
-#             p = 4
-#     if p == 'c':
-#             p = 3
-#     if p == 'd':
-#                     p = 2             
-#     b = int(p)  
-#     if b >= k: 
-#         print(a [0:2], p)
+file = input('Введите файл - ')
+f = open (file, 'r')
+k = int(input('Введите оценку: '))
+t = f.readlines()
+for line in t:
+    a = line.split()
+    p = a[-1]
+    if p == 'a':
+        p = 5
+    if p == 'b':
+            p = 4
+    if p == 'c':
+            p = 3
+    if p == 'd':
+                    p = 2             
+    b = int(p)  
+    if b >= k: 
+        print(a [0:2], p)
 
