@@ -53,7 +53,7 @@ while menu_:
 		break
 		
 	elif selection == '3':
-		path_1 = input("Пожалуйста, выберете новую Базу Данны- : ")
+		path_1 = input("Пожалуйста, выберете новую Базу Данных: ")
 		connection = sqlite3.connect(path_1)
 		cursor = connection.cursor()
 		if connection:
